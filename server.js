@@ -5,8 +5,14 @@ const port = 3000
 app.listen(port, () => {
     console.log(`Server started at port ${port}`)
  })
- 
+
  app.get('/', (req, res) => {
     res.send('Hello World!')
   })
   
+  app.post('/api/cars', (req, res) => {
+    const {name,brand}= request.body;
+    console.log(name);
+    console.log(brand);
+    res.send('Got Car data successfully.')
+})
