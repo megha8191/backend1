@@ -16,10 +16,3 @@ app.listen(port, () => {
     console.log(brand);
     res.send('Got Car data successfully.')
 })
-
-// app.post('/api/cars', (req, res) => {
-//   const {name,brand}= request.body;
-//   console.log(name);
-//   console.log(brand);
-//   res.send('Got Car data successfully.')
-// })
